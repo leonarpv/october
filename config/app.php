@@ -16,8 +16,7 @@ return [
     |
     */
 
-    'debug' => true,
-
+ 'debug' => env('APP_DEBUG', 'true'),
     /*
     |--------------------------------------------------------------------------
     | Application Name
@@ -28,7 +27,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'October CMS',
+    'name' =>  env('APP_NAME', 'Motor de Reservas - restaurantes'),
 
     /*
     |--------------------------------------------------------------------------
@@ -41,7 +40,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
+    'url' => env('APP_URL', 'http://localhost'),
 
     /*
     |--------------------------------------------------------------------------
@@ -61,9 +60,7 @@ return [
     | to display dates & times.
     |
     */
-
-    'timezone' => 'UTC',
-
+    'timezone' =>  env('APP_TIMEZONE', 'America/Argentina/Buenos_Aires'),
     /*
     |--------------------------------------------------------------------------
     | Application Locale Configuration
@@ -81,7 +78,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => env('APP_LOCALE', 'es'),
 
     /*
     |--------------------------------------------------------------------------
@@ -107,7 +104,7 @@ return [
     |
     */
 
-    'key' => 'CHANGE_ME!!!!!!!!!!!!!!!!!!!!!!!',
+    'key' => 'base64:7IhSzheduELh2HmhhPcXUzebNGuImI/aoQ1WpEuFwTk=',
 
     'cipher' => 'AES-256-CBC',
 
